@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 50px;
+}
+
+header{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+}
+
+
+.titulo{
+    font-size:  31px ;
+    text-decoration: underline;
+    font-style: oblique;
+
+}
+
+
+nav li{
+    display: inline;
+}
+
+
+nav li :hover{
+    color: antiquewhite;
+    background-color: rgb(218, 134, 31);
+}
+
+
+
+nav a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-style: oblique;
+}
+
+
+.contenedor_limite{
+    background-color: rgba(5, 152, 196, 0.979);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 25px;
+    border: 5px solid rgba(61, 137, 182, 0.863);
+    text-align: center;
+    font-style: oblique;
+}
+
+.contenedor_limite_2{
+    background-color: rgba(5, 152, 196, 0.979);
+    padding: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.padre{
+    background-color: rgba(127, 255, 227, 0.664);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+
+section{
+    margin: 25px;
+}
+
+
+.card{
+    background-color: rgba(202, 226, 65, 0.76);
+    width: 270px;
+    height: 540px;
+    text-align: center;
+    border: 5px solid rgb(27, 37, 2);
+    border-radius: 25px;
+    padding: 25px;
+    font-style: oblique;
+    margin: 0 auto;
+}
+
+
+.card img{
+    width: 100%;
+    border: 6px solid rgb(48, 156, 84);
+    
+}
+
+.body{
+    background-color: rgba(95, 167, 235, 0.747);
+}
+
+footer{
+    background-color: white;
+    
+}
+
+li :hover{
+    color: antiquewhite;
+    background-color: rgb(218, 134, 31);
+}
+
+/*----media query----------------------------------------*/
+@media screen and (max-width:700px) {
+    header{
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        height: 100px;
+    }
+} 
+
+
+/*---------------------grilla---------------------------------*/
+
+.parent {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: rgba(30, 33, 233, 0.774);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+
+.div1 {
+    grid-area: 1 / 1 / 3 / 2; 
+}
+
+.div1 img{
+    width: 100%;
+}
+
+.div2 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.div2 img{
+    width: 100%;
+}
+
+.div3 {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.div3 img{
+    width: 100%;
+}
+
+
+
+
+
+
+ 
+
+
+
+
+
